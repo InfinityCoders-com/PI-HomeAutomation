@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Index Page</title>
+	</head>
+	<body>
+		<form action='gpio-handler.py' method='get'>
+    			<input type='radio' name='bulb' vaue='on' />
+			<input type='radio' name='bulb' value='off' />
+			<div id='demo'></div>
+			<input type='submit' value='Submit' />
+		</form>
+	</body>
+	<script>
+	(function (){
+	 var radios = document.getElementsByName('bulb');
+	 console.log(radios);
+	 for(var i = 0; i < radios.length; i++){
+	  radios[i].onclick = function(){
+          document.getElementById('demo').innerText = this.value;
+	 }
+	}
+	})();
+	</script>
+</html>

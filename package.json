@@ -1,0 +1,21 @@
+{
+  "name": "piprojects",
+  "version": "1.0.0",
+  "description": "Pi web led controls",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "light",
+    "home",
+    "automation"
+  ],
+  "author": "abhishek",
+  "license": "ISC",
+  "dependencies": {
+    "onoff": "^3.2.2",
+    "rpi-gpio": "^2.1.2"
+  }
+}
